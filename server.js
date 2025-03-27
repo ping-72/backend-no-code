@@ -24,7 +24,7 @@ app.use(
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send(<h1>"Hello World"</h1>);
+  res.status(200).json({ message: "Hello World" });
 });
 
 // Routes
