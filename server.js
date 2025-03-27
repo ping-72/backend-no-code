@@ -23,6 +23,10 @@ app.use(
 );
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Hello World");
+});
+
 // Routes
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/forms", require("./routes/forms"));
